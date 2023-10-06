@@ -1,5 +1,5 @@
 
-# 🦝 Raccons
+# 🦝 Raccoons
 A landing page about raccoons.
 
 ## 🤳 Preview
