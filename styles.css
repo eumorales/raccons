@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 50px;
+    background-image: url('assets/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom 45%;
+    color: #fff;
+}
+
+.header-imagem {
+    height: 72px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 32px;
+    margin-right: 10rem;
+}
+
+.header-menu-item {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.header-menu a:hover {
+    color: #8481a5;
+}
+
+.header img {
+    animation: moveUp 2.5s ease infinite;
+    max-width: 60%;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.descricao {
+    color: grey;
+    font-size: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+.guaxinim {
+    display: flex;
+    flex-direction: row;
+    margin-left: 22rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.guaxinim > * {
+    margin: 0;
+}
+
+.guaxinim img {
+    margin-right: 15rem;
+    max-width: 60%;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.guaxinim h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.guaxinim h1,
+.guaxinim h2,
+.guaxinim h4 {
+    margin: 0;
+    text-align: left;
+}
+
+.caracteristicas {
+    justify-content: space-around;
+    margin-left: 22rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.caracteristicas > * {
+    margin: 10px 0;
+}
+
+.caracteristicas img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 25rem;
+}
+
+.caracteristicas h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.caracteristicas h1,
+.caracteristicas h2,
+.caracteristicas h4 {
+    margin: 0;
+    text-align: left;
+}
+
+.comportamento {
+    justify-content: space-around;
+    margin-left: 22rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.comportamento > * {
+    margin: 10px 0;
+}
+
+.comportamento img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.comportamento h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.comportamento h1,
+.comportamento h2,
+.comportamento h4 {
+    margin: 0;
+    text-align: left;
+}
+
+.habitat {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 22rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.habitat > * {
+    margin: 0;
+}
+
+.habitat img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 1rem;
+    margin-right: 15rem;
+}
+
+.container {
+    margin-left: 100px;
+    text-align: left;
+}
+
+.habitat h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.habitat h1,
+.habitat h2,
+.habitat h4 {
+    margin: 0;
+    text-align: left;
+}
+
+footer {
+    background-color: #f5f5f5;
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.contato {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0.5rem;
+}
+
+.icones {
+    width: 36px;
+    height: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .header {
+        display: none;
+        padding: 20px; 
+    }
+
+    .header img {
+        max-width: 40%;
+        margin-left: 2rem; 
+    }
+
+    .guaxinim,
+    .caracteristicas,
+    .comportamento,
+    .habitat {
+        flex-direction: column; 
+        margin-left: 1rem;
+        margin-top: 1rem; 
+    }
+
+    .guaxinim img,
+    .caracteristicas img,
+    .comportamento img,
+    .habitat img {
+        max-width: 100%;
+        margin-left: 0; 
+        margin-top: 1rem; 
+    }
+
+    .guaxinim h1,
+    .caracteristicas h1,
+    .comportamento h1,
+    .habitat h1 {
+        font-size: 28px; 
+        margin-left: 0; 
+    }
+}
